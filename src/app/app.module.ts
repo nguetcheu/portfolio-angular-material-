@@ -13,17 +13,21 @@ import {FooterComponent} from "./footer/footer.component";
 import {AboutComponent} from "./about/about.component";
 import {ContactComponent} from "./contact/contact.component";
 import {FlexLayoutModule} from "@angular/flex-layout";
+import {IntroComponent} from "./intro/intro.component";
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    EducationComponent,
-    CompetencesComponent,
-    FooterComponent,
-    AboutComponent,
-    ContactComponent
-  ],
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        EducationComponent,
+        CompetencesComponent,
+        FooterComponent,
+        AboutComponent,
+        ContactComponent,
+        IntroComponent,
+        ExperienceComponent
+    ],
   imports: [
     BrowserModule,
     MaterialModule,
