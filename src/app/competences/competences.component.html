@@ -1,1 +1,18 @@
-<p>competences works!</p>
+<section id="Developpement">
+    <h1>Designeur</h1>
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
+      <mat-card *ngFor="let tech of techno" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{tech.titre}}</mat-card-title>
+          <mat-card-subtitle>{{tech.categorie}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="tech.url" alt="Photo of {{tech.titre}}">
+        <mat-card-content>
+          <p>
+            {{tech.infos}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</section>

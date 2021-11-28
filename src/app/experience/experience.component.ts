@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-experience',
@@ -11,5 +12,20 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  // @ts-ignore
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
 }
